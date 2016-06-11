@@ -29,26 +29,26 @@ public class VlanToCsv {
 
     }
 
-    public ArrayList<String> getRow( String targetSheet, String firstItemInRow ) throws Exception {
-        // populate the Platform sheet object with the selected row
-
-        ArrayList<String> rowList = null;
-
-        sheet = workBook.getTableByName( targetSheet );
-        // iterate over rows
-        Iterator<Row> rowIt = sheet.getRowIterator();
-        while ( rowIt.hasNext() ) {
-            row = rowIt.next();
-            cell = row.getCellByIndex( 0 );
-            String cellContent = cell.getStringValue();
-            if ( cellContent.compareTo( firstItemInRow ) == 0 ) {
-                rowList = convertRowToList( row );
-                break;
-            }
-        }
-
-        return rowList;
-    }
+//    public ArrayList<String> getRow( String targetSheet, String firstItemInRow ) throws Exception {
+//        // populate the Platform sheet object with the selected row
+//
+//        ArrayList<String> rowList = null;
+//
+//        sheet = workBook.getTableByName( targetSheet );
+//        // iterate over rows
+//        Iterator<Row> rowIt = sheet.getRowIterator();
+//        while ( rowIt.hasNext() ) {
+//            row = rowIt.next();
+//            cell = row.getCellByIndex( 0 );
+//            String cellContent = cell.getStringValue();
+//            if ( cellContent.compareTo( firstItemInRow ) == 0 ) {
+//                rowList = convertRowToList( row );
+//                break;
+//            }
+//        }
+//
+//        return rowList;
+//    }
 
     public ArrayList getAllRows( String sheetName, boolean skipFirstRow ) throws Exception {
         /*
