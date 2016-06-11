@@ -20,14 +20,14 @@ public class VlanToCsv {
 
     private Cell cell;
 
-    public void createWorkbook( String inputFileName ) throws Exception {
-        try {
-            workBook = SpreadsheetDocument.loadDocument( inputFileName );
-        } catch ( Exception e ) {
-            throw new Exception( e.getMessage() );
-        }
-
-    }
+//    public void createWorkbook( String inputFileName ) throws Exception {
+//        try {
+//            workBook = SpreadsheetDocument.loadDocument( inputFileName );
+//        } catch ( Exception e ) {
+//            throw new Exception( e.getMessage() );
+//        }
+//
+//    }
 
 //    public ArrayList<String> getRow( String targetSheet, String firstItemInRow ) throws Exception {
 //        // populate the Platform sheet object with the selected row
